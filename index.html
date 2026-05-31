@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mathew Smith, FMP, SFP — Facilities Leader</title>
+
+  <!-- ===== FAVICON ===== -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%230d1117'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='26' fill='%239db352'>MS</text></svg>" />
+
+  <!-- ===== OPEN GRAPH ===== -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Mathew Smith, FMP, SFP — Facilities Leader" />
+  <meta property="og:description" content="Workplace Experience &amp; Facilities Manager with over a decade of expertise. Currently at CBRE – Microsoft. FMP &amp; SFP certified." />
+  <meta property="og:image"       content="Resources/Headshot.jpg" />
+  <meta property="og:url"         content="" />
+  <meta name="description"        content="Workplace Experience &amp; Facilities Manager with over a decade of expertise. Currently at CBRE – Microsoft. FMP &amp; SFP certified." />
+
+  <!-- ===== TWITTER CARD ===== -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Mathew Smith, FMP, SFP — Facilities Leader" />
+  <meta name="twitter:description" content="Workplace Experience &amp; Facilities Manager with over a decade of expertise. Currently at CBRE – Microsoft." />
+  <meta name="twitter:image"       content="Resources/Headshot.jpg" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    /* ===== CSS VARIABLES ===== */
+    :root {
+      --bg-primary:    #0d1117;
+      --bg-secondary:  #161b22;
+      --bg-card:       #1c2330;
+      --bg-card-hover: #222c3a;
+      --olive:         #7a9040;
+      --olive-light:   #9db352;
+      --olive-dim:     #4e5c28;
+      --olive-glow:    rgba(122, 144, 64, 0.18);
+      --text-primary:  #e8eaed;
+      --text-secondary:#8b949e;
+      --text-muted:    #4d5566;
+      --border:        rgba(122, 144, 64, 0.2);
+      --border-subtle: rgba(255,255,255,0.06);
+      --radius:        10px;
+      --transition:    0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    /* ===== RESET & BASE ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+    a { color: var(--olive-light); text-decoration: none; transition: color var(--transition); }
+    a:hover { color: #c5d96a; }
+    img { max-width: 100%; }
+
+    /* ===== SCROLLBAR ===== */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg-primary); }
+    ::-webkit-scrollbar-thumb { background: var(--olive-dim); border-radius: 3px; }
+
+    /* ===== NAV ===== */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5%;
+      height: 64px;
+      background: rgba(13, 17, 23, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-subtle);
+      transition: box-shadow 0.3s;
+    }
+    nav.scrolled { box-shadow: 0 4px 30px rgba(0,0,0,0.4); }
+    .nav-logo {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 800;
+      font-size: 1.1rem;
+      letter-spacing: 0.05em;
+      color: var(--text-primary);
+    }
+    .nav-logo span { color: var(--olive-light); }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a {
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      transition: color var(--transition);
+    }
+    .nav-links a:hover { color: var(--olive-light); }
+
+    /* ===== HERO ===== */
+    #hero {
+      min-height: 100vh;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      text-align: center;
+      padding: 100px 5% 60px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0; z-index: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 0%, rgba(122,144,64,0.12) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 40% at 80% 80%, rgba(122,144,64,0.06) 0%, transparent 50%);
+    }
+    .hero-grid {
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(122,144,64,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(122,144,64,0.04) 1px, transparent 1px);
+      background-size: 50px 50px;
+      mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+    }
+    .hero-content { position: relative; z-index: 1; max-width: 800px; }
+    .hero-badge {
+      display: inline-block;
+      background: var(--olive-glow);
+      border: 1px solid var(--border);
+      color: var(--olive-light);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 100px;
+      margin-bottom: 1.5rem;
+      animation: fadeDown 0.8s ease both;
+    }
+    .hero-name {
+      font-family: 'Raleway', sans-serif;
+      font-size: clamp(2.8rem, 7vw, 5.5rem);
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      animation: fadeDown 0.8s 0.1s ease both;
+    }
+    .hero-name .accent { color: var(--olive-light); }
+    .hero-title {
+      font-size: clamp(1rem, 2.5vw, 1.4rem);
+      font-weight: 300;
+      color: var(--text-secondary);
+      margin-top: 1rem;
+      letter-spacing: 0.05em;
+      animation: fadeDown 0.8s 0.2s ease both;
+    }
+    .hero-location {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      animation: fadeDown 0.8s 0.3s ease both;
+    }
+    .hero-location svg { vertical-align: -3px; margin-right: 4px; }
+    .hero-cta {
+      display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;
+      margin-top: 2.5rem;
+      animation: fadeDown 0.8s 0.4s ease both;
+    }
+    .btn {
+      padding: 12px 28px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      cursor: pointer;
+      transition: all var(--transition);
+      border: none;
+    }
+    .btn-primary {
+      background: var(--olive);
+      color: #fff;
+    }
+    .btn-primary:hover {
+      background: var(--olive-light);
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(122,144,64,0.35);
+    }
+    .btn-outline {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+    }
+    .btn-outline:hover {
+      border-color: var(--olive-light);
+      color: var(--olive-light);
+      transform: translateY(-2px);
+    }
+    .hero-stats {
+      display: flex; gap: 3rem; justify-content: center; flex-wrap: wrap;
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border-subtle);
+      animation: fadeDown 0.8s 0.5s ease both;
+    }
+    .stat-item { text-align: center; }
+    .stat-num {
+      font-family: 'Raleway', sans-serif;
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--olive-light);
+      display: block;
+    }
+    .stat-label { font-size: 0.78rem; color: var(--text-muted); letter-spacing: 0.08em; text-transform: uppercase; }
+    .scroll-hint {
+      position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%);
+      animation: bounce 2s infinite; z-index: 1;
+    }
+    .scroll-hint svg { color: var(--olive-dim); }
+
+    /* ===== SECTIONS ===== */
+    section { padding: 100px 5%; }
+    .section-inner { max-width: 1100px; margin: 0 auto; }
+    .section-tag {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--olive-light);
+      margin-bottom: 1rem;
+    }
+    .section-tag::before {
+      content: ''; width: 24px; height: 2px; background: var(--olive-light);
+    }
+    .section-title {
+      font-family: 'Raleway', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    .section-sub { color: var(--text-secondary); font-size: 1rem; max-width: 600px; }
+
+    /* ===== ABOUT ===== */
+    #about { background: var(--bg-secondary); }
+    .about-grid {
+      display: grid; grid-template-columns: 1fr 1.5fr; gap: 4rem; align-items: center;
+      margin-top: 3rem;
+    }
+    .about-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      padding: 2.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .about-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--olive), transparent);
+    }
+    .about-headshot {
+      width: 100px; height: 100px; border-radius: 50%;
+      object-fit: cover; object-position: center top;
+      border: 3px solid var(--olive);
+      box-shadow: 0 0 0 6px var(--olive-glow), 0 8px 24px rgba(0,0,0,0.4);
+      margin-bottom: 1.5rem;
+      display: block;
+    }
+    .about-info { display: flex; flex-direction: column; gap: 0.75rem; }
+    .about-info-item {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 0.88rem; color: var(--text-secondary);
+    }
+    .about-info-item svg { color: var(--olive-light); flex-shrink: 0; }
+    .about-text p { color: var(--text-secondary); margin-bottom: 1.2rem; line-height: 1.85; }
+    .cert-pills { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.5rem; }
+    .cert-pill {
+      background: var(--olive-glow);
+      border: 1px solid var(--border);
+      color: var(--olive-light);
+      font-size: 0.78rem; font-weight: 600;
+      padding: 5px 14px; border-radius: 100px;
+    }
+
+    /* ===== TIMELINE ===== */
+    #experience { background: var(--bg-primary); }
+    .timeline { position: relative; margin-top: 4rem; padding-left: 2rem; }
+    .timeline::before {
+      content: '';
+      position: absolute; left: 0; top: 0; bottom: 0; width: 2px;
+      background: linear-gradient(to bottom, var(--olive), var(--olive-dim) 80%, transparent);
+    }
+    .timeline-item {
+      position: relative;
+      padding: 0 0 3.5rem 2.5rem;
+      opacity: 0;
+      transform: translateX(-30px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .timeline-item.visible { opacity: 1; transform: translateX(0); }
+    .timeline-dot {
+      position: absolute; left: -7px; top: 6px;
+      width: 16px; height: 16px; border-radius: 50%;
+      background: var(--bg-primary);
+      border: 2px solid var(--olive);
+      transition: all 0.3s;
+    }
+    .timeline-item:hover .timeline-dot {
+      background: var(--olive);
+      box-shadow: 0 0 0 4px var(--olive-glow);
+    }
+    .timeline-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      padding: 2rem;
+      transition: all var(--transition);
+      cursor: default;
+    }
+    .timeline-card:hover {
+      border-color: var(--border);
+      background: var(--bg-card-hover);
+      transform: translateX(6px);
+      box-shadow: -4px 0 0 var(--olive), 0 8px 30px rgba(0,0,0,0.3);
+    }
+    .timeline-meta {
+      display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
+      margin-bottom: 0.75rem;
+    }
+    .timeline-company {
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.25rem; font-weight: 700;
+      color: var(--text-primary);
+    }
+    .timeline-period {
+      font-size: 0.78rem;
+      background: var(--olive-glow);
+      border: 1px solid var(--border);
+      color: var(--olive-light);
+      padding: 3px 10px; border-radius: 100px;
+      font-weight: 600;
+    }
+    .timeline-role {
+      font-size: 1rem; font-weight: 600;
+      color: var(--olive-light);
+      margin-bottom: 0.25rem;
+    }
+    .timeline-location {
+      font-size: 0.82rem; color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+    .timeline-bullets { list-style: none; padding: 0; }
+    .timeline-bullets li {
+      position: relative;
+      padding-left: 1.25rem;
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-bottom: 0.4rem;
+    }
+    .timeline-bullets li::before {
+      content: '›';
+      position: absolute; left: 0;
+      color: var(--olive); font-size: 1rem; font-weight: 700;
+    }
+
+    /* ===== SKILLS ===== */
+    #skills { background: var(--bg-secondary); }
+    .skills-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem; margin-top: 3rem;
+    }
+    .skill-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      transition: all var(--transition);
+      opacity: 0; transform: translateY(20px);
+    }
+    .skill-card.visible { opacity: 1; transform: translateY(0); }
+    .skill-card:hover {
+      border-color: var(--border);
+      background: var(--bg-card-hover);
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    }
+    .skill-icon { font-size: 1.5rem; margin-bottom: 0.75rem; }
+    .skill-name {
+      font-size: 0.88rem; font-weight: 600;
+      color: var(--text-primary); margin-bottom: 0.75rem;
+    }
+
+    /* ===== EDUCATION ===== */
+    #education { background: var(--bg-primary); }
+    .edu-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 3rem; }
+    .edu-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px; padding: 2rem;
+      transition: all var(--transition);
+      opacity: 0; transform: translateY(20px);
+      position: relative; overflow: hidden;
+    }
+    .edu-card::after {
+      content: '';
+      position: absolute; top: 0; right: 0;
+      width: 80px; height: 80px;
+      background: radial-gradient(circle, var(--olive-glow), transparent 70%);
+    }
+    .edu-card.visible { opacity: 1; transform: translateY(0); }
+    .edu-card:hover { border-color: var(--border); background: var(--bg-card-hover); transform: translateY(-4px); }
+    .edu-badge {
+      display: inline-block;
+      background: var(--olive-glow); border: 1px solid var(--border);
+      color: var(--olive-light); font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 4px 12px; border-radius: 100px; margin-bottom: 1rem;
+    }
+    .edu-org { font-family: 'Raleway', sans-serif; font-size: 1.1rem; font-weight: 700; margin-bottom: 0.25rem; }
+    .edu-credential { font-size: 0.9rem; color: var(--olive-light); font-weight: 600; margin-bottom: 0.25rem; }
+    .edu-date { font-size: 0.78rem; color: var(--text-muted); margin-bottom: 0.75rem; }
+    .edu-desc { font-size: 0.82rem; color: var(--text-secondary); line-height: 1.7; }
+
+    /* ===== FEATURED PROJECT ===== */
+    #projects { background: var(--bg-secondary); }
+    .project-card {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 3rem;
+      align-items: center;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 16px;
+      padding: 2.5rem 3rem;
+      margin-top: 3rem;
+      position: relative;
+      overflow: hidden;
+      transition: all var(--transition);
+      opacity: 0; transform: translateY(20px);
+    }
+    .project-card.visible { opacity: 1; transform: translateY(0); }
+    .project-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; bottom: 0; width: 4px;
+      background: linear-gradient(to bottom, var(--olive-light), var(--olive-dim));
+    }
+    .project-card:hover {
+      border-color: var(--border);
+      background: var(--bg-card-hover);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+    }
+    .project-label {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.15em;
+      text-transform: uppercase; color: var(--olive-light);
+      margin-bottom: 0.75rem;
+    }
+    .project-name {
+      font-family: 'Raleway', sans-serif;
+      font-size: 2rem; font-weight: 800;
+      line-height: 1.1; margin-bottom: 0.5rem;
+    }
+    .project-name span { color: var(--olive-light); }
+    .project-tagline {
+      font-size: 1rem; color: var(--text-secondary);
+      margin-bottom: 1.5rem; line-height: 1.7;
+    }
+    .project-link {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--olive); color: #fff;
+      padding: 10px 22px; border-radius: 8px;
+      font-size: 0.88rem; font-weight: 600;
+      transition: all var(--transition);
+    }
+    .project-link:hover {
+      background: var(--olive-light); color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(122,144,64,0.4);
+    }
+    .project-details { display: flex; flex-direction: column; gap: 1rem; }
+    .project-detail-item {
+      display: flex; gap: 1rem; align-items: flex-start;
+    }
+    .project-detail-icon {
+      width: 38px; height: 38px; border-radius: 8px; flex-shrink: 0;
+      background: var(--olive-glow); border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem;
+    }
+    .project-detail-text strong {
+      display: block; font-size: 0.88rem; font-weight: 600;
+      color: var(--text-primary); margin-bottom: 2px;
+    }
+    .project-detail-text span {
+      font-size: 0.82rem; color: var(--text-secondary); line-height: 1.6;
+    }
+    @media (max-width: 768px) {
+      .project-card { grid-template-columns: 1fr; gap: 2rem; padding: 2rem; }
+    }
+
+    /* ===== HOBBIES ===== */
+    #hobbies { background: var(--bg-primary); }
+    .hobbies-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.5rem; margin-top: 3rem; }
+    .hobby-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px; padding: 2rem;
+      transition: all var(--transition);
+      opacity: 0; transform: translateY(20px);
+      position: relative; overflow: hidden;
+    }
+    .hobby-card.visible { opacity: 1; transform: translateY(0); }
+    .hobby-card:hover { border-color: var(--border); background: var(--bg-card-hover); transform: translateY(-6px); box-shadow: 0 16px 40px rgba(0,0,0,0.35); }
+    .hobby-card::before {
+      content: '';
+      position: absolute; bottom: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, transparent, var(--olive), transparent);
+      opacity: 0; transition: opacity var(--transition);
+    }
+    .hobby-card:hover::before { opacity: 1; }
+    .hobby-emoji { font-size: 2.2rem; margin-bottom: 1rem; display: block; }
+    .hobby-name { font-family: 'Raleway', sans-serif; font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .hobby-desc { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.7; }
+
+    /* ===== CONTACT ===== */
+    #contact { background: var(--bg-secondary); }
+    .contact-inner {
+      max-width: 700px; margin: 0 auto; text-align: center;
+    }
+    .contact-grid { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-top: 2.5rem; }
+    .contact-item {
+      display: flex; align-items: center; gap: 10px;
+      background: var(--bg-card); border: 1px solid var(--border-subtle);
+      border-radius: 10px; padding: 1rem 1.5rem;
+      font-size: 0.9rem; color: var(--text-secondary);
+      transition: all var(--transition);
+    }
+    .contact-item:hover { border-color: var(--border); color: var(--text-primary); transform: translateY(-3px); }
+    .contact-item svg { color: var(--olive-light); flex-shrink: 0; }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--bg-secondary);
+      border-top: 1px solid var(--border-subtle);
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+    footer span { color: var(--olive-light); }
+
+    /* ===== ANIMATIONS ===== */
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50%       { transform: translateX(-50%) translateY(8px); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; } to { opacity: 1; }
+    }
+
+    /* ===== HAMBURGER ===== */
+    .nav-hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      width: 36px; height: 36px;
+      background: none; border: none;
+      cursor: pointer; padding: 4px;
+      z-index: 200;
+    }
+    .nav-hamburger span {
+      display: block;
+      width: 22px; height: 2px;
+      background: var(--text-primary);
+      border-radius: 2px;
+      transition: all 0.3s ease;
+      transform-origin: center;
+    }
+    .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* ===== MOBILE DRAWER ===== */
+    .nav-drawer {
+      display: none;
+      position: fixed; top: 64px; left: 0; right: 0;
+      background: rgba(13,17,23,0.97);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 1.5rem 5% 2rem;
+      z-index: 99;
+      transform: translateY(-10px);
+      opacity: 0;
+      transition: opacity 0.25s ease, transform 0.25s ease;
+    }
+    .nav-drawer.open {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .nav-drawer ul {
+      list-style: none;
+      display: flex; flex-direction: column; gap: 0;
+    }
+    .nav-drawer ul li a {
+      display: block;
+      padding: 0.9rem 0;
+      font-size: 1.05rem; font-weight: 600;
+      letter-spacing: 0.06em;
+      color: var(--text-secondary);
+      border-bottom: 1px solid var(--border-subtle);
+      transition: color var(--transition);
+    }
+    .nav-drawer ul li:last-child a { border-bottom: none; }
+    .nav-drawer ul li a:hover { color: var(--olive-light); }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      nav { padding: 0 4%; }
+      .nav-links { display: none; }
+      .nav-hamburger { display: flex; }
+      .nav-drawer { display: block; }
+      .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .timeline { padding-left: 1.25rem; }
+      .timeline-item { padding-left: 1.75rem; }
+      section { padding: 70px 5%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav id="navbar">
+    <div class="nav-logo">MS<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== MOBILE DRAWER ===== -->
+  <div class="nav-drawer" id="navDrawer">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Facilities &amp; Operations Leader</div>
+      <h1 class="hero-name">Mathew <span class="accent">Smith</span></h1>
+      <p class="hero-title">FMP &nbsp;·&nbsp; SFP &nbsp;·&nbsp; Workplace Experience / Facilities Manager</p>
+      <p class="hero-location">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        Forest Grove, OR
+      </p>
+      <div class="hero-cta">
+        <a href="#experience" class="btn btn-primary">View My Journey</a>
+        <a href="Resources/Mat_Smith_FMP_SFP_2026.pdf" download class="btn btn-outline">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px;margin-right:6px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>Download Resume
+        </a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num">10+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">5</span>
+          <span class="stat-label">Roles</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">2</span>
+          <span class="stat-label">Global Certifications</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">FMP<br>SFP</span>
+          <span class="stat-label">Designations</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="section-tag">About Me</div>
+      <h2 class="section-title">Professional<br>at a Glance</h2>
+      <div class="about-grid">
+        <div class="about-card">
+          <img src="Resources/Headshot.jpg" alt="Mathew Smith" class="about-headshot" />
+          <div class="about-info">
+            <div class="about-info-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              Forest Grove, OR
+            </div>
+            <div class="about-info-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              mat.smith.fmp@gmail.com
+            </div>
+            <a href="https://www.linkedin.com/in/mathew-smith-fmp-sfp-39385653/" target="_blank" rel="noopener" class="about-info-item" style="color:var(--text-secondary);text-decoration:none;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn Profile
+            </a>
+            <div class="about-info-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              CBRE – Microsoft (Current)
+            </div>
+          </div>
+          <div class="cert-pills" style="margin-top:1.5rem;">
+            <span class="cert-pill">FMP</span>
+            <span class="cert-pill">SFP</span>
+            <span class="cert-pill">HVAC/R Cert</span>
+            <span class="cert-pill">IFMA</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <p>Facilities Professional with over a decade of expertise managing complex operations across commercial, technology, hospitality, and healthcare environments. I specialize in vendor management, compliance assurance, and project management — driving measurable results through data and strategy.</p>
+          <p>Proficient in utilizing HVAC and MEP systems to enhance facility performance and implementing innovative maintenance strategies. Committed to fostering team development and achieving operational excellence through strategic planning and detailed analysis.</p>
+          <p>Currently serving as Workplace Experience/Facilities Manager at CBRE — Microsoft in Hillsboro, OR, where I lead high-performing cross-functional teams, manage enterprise-level contracts, and deliver best-in-class workplace experiences.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience">
+    <div class="section-inner">
+      <div class="section-tag">Career Journey</div>
+      <h2 class="section-title">Professional<br>Experience</h2>
+      <p class="section-sub">Over a decade of progressive growth across facilities management, engineering, and operations leadership.</p>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-company">CBRE – Microsoft</span>
+              <span class="timeline-period">Apr 2025 – Present</span>
+            </div>
+            <div class="timeline-role">Workplace Experience / Facilities Manager</div>
+            <div class="timeline-location">📍 Hillsboro, OR</div>
+            <ul class="timeline-bullets">
+              <li>Lead and develop high-performing teams through coaching, training, and performance management</li>
+              <li>Direct daily operations, scheduling, and cross-functional coordination to meet enterprise service goals</li>
+              <li>Build and maintain client and vendor relationships; manage contracts and cost-saving initiatives</li>
+              <li>Implement process improvements to drive efficiency, compliance, and safety across multiple programs</li>
+              <li>Ensure consistent service quality and operational excellence across the Microsoft campus portfolio</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-company">NTT Data</span>
+              <span class="timeline-period">Apr 2023 – Apr 2025</span>
+            </div>
+            <div class="timeline-role">Facilities Manager</div>
+            <div class="timeline-location">📍 Hillsboro, OR</div>
+            <ul class="timeline-bullets">
+              <li>Promoted within to Facilities Manager, overseeing critical data center operations</li>
+              <li>Streamlined operations through vendor optimization and enhanced maintenance protocols</li>
+              <li>Implemented facility management systems improving resource use and regulatory compliance</li>
+              <li>Led and developed cross-functional teams to drive performance and operational excellence</li>
+              <li>Negotiated vendor contracts and managed budgets to achieve significant cost savings</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-company">ABM Industries</span>
+              <span class="timeline-period">Jul 2021 – May 2023</span>
+            </div>
+            <div class="timeline-role">Commercial Building Engineer</div>
+            <div class="timeline-location">📍 Wilsonville, OR</div>
+            <ul class="timeline-bullets">
+              <li>Orchestrated complex tenant improvement projects, coordinating contractors and building operations</li>
+              <li>Led cross-functional teams in emergency response protocols, managing building safety standards</li>
+              <li>Managed complex building system upgrades in strict compliance with regulatory standards</li>
+              <li>Implemented preventive maintenance programs for critical building systems, reducing equipment downtime</li>
+              <li>Fostered effective communication between contractors and building management teams</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-company">Prestige Care</span>
+              <span class="timeline-period">Sep 2020 – Jul 2021</span>
+            </div>
+            <div class="timeline-role">Maintenance Director</div>
+            <div class="timeline-location">📍 Forest Grove Rehabilitation, Forest Grove, OR</div>
+            <ul class="timeline-bullets">
+              <li>Led facility maintenance operations with comprehensive emergency preparedness systems</li>
+              <li>Ensured regulatory compliance and maintained strict infection control standards throughout</li>
+              <li>Orchestrated preventive maintenance programs and streamlined service request processes</li>
+              <li>Maintained facility safety standards through systematic documentation and monitoring</li>
+              <li>Ensured continuous compliance with healthcare regulations and resident safety protocols</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-company">Aloft Hotel</span>
+              <span class="timeline-period">Dec 2018 – Sep 2020</span>
+            </div>
+            <div class="timeline-role">Chief Engineer</div>
+            <div class="timeline-location">📍 Hillsboro, OR</div>
+            <ul class="timeline-bullets">
+              <li>Spearheaded facility operations and safety protocols while directing the maintenance team</li>
+              <li>Developed comprehensive preventive maintenance schedules, reducing downtime significantly</li>
+              <li>Streamlined emergency response procedures and FLS compliance measures</li>
+              <li>Led incident action teams and created data-driven solutions for recurring facility challenges</li>
+              <li>Implemented advanced emergency protocols and FLS compliance while maintaining superior guest satisfaction</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <div class="section-inner">
+      <div class="section-tag">Capabilities</div>
+      <h2 class="section-title">Skills &amp;<br>Expertise</h2>
+      <div class="skills-grid">
+        <div class="skill-card" style="transition-delay:0.0s"><div class="skill-icon">🏗️</div><div class="skill-name">Vendor Management</div></div>
+        <div class="skill-card" style="transition-delay:0.05s"><div class="skill-icon">📋</div><div class="skill-name">Project Management</div></div>
+        <div class="skill-card" style="transition-delay:0.1s"><div class="skill-icon">🔧</div><div class="skill-name">MEP Systems / HVAC</div></div>
+        <div class="skill-card" style="transition-delay:0.15s"><div class="skill-icon">📊</div><div class="skill-name">Finance &amp; Budgeting</div></div>
+        <div class="skill-card" style="transition-delay:0.2s"><div class="skill-icon">⚙️</div><div class="skill-name">Process Improvement</div></div>
+        <div class="skill-card" style="transition-delay:0.25s"><div class="skill-icon">👥</div><div class="skill-name">Team Leadership</div></div>
+        <div class="skill-card" style="transition-delay:0.3s"><div class="skill-icon">🛡️</div><div class="skill-name">Risk &amp; Compliance</div></div>
+        <div class="skill-card" style="transition-delay:0.35s"><div class="skill-icon">🌿</div><div class="skill-name">Sustainability (SFP)</div></div>
+        <div class="skill-card" style="transition-delay:0.4s"><div class="skill-icon">🏢</div><div class="skill-name">Workplace Experience</div></div>
+        <div class="skill-card" style="transition-delay:0.45s"><div class="skill-icon">📈</div><div class="skill-name">Strategic Planning</div></div>
+        <div class="skill-card" style="transition-delay:0.5s"><div class="skill-icon">🔄</div><div class="skill-name">Change Management</div></div>
+        <div class="skill-card" style="transition-delay:0.55s"><div class="skill-icon">📉</div><div class="skill-name">Data Analysis</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education">
+    <div class="section-inner">
+      <div class="section-tag">Credentials</div>
+      <h2 class="section-title">Education &amp;<br>Certifications</h2>
+      <div class="edu-grid">
+
+        <div class="edu-card">
+          <span class="edu-badge">IFMA Global Designation</span>
+          <div class="edu-org">International Facility Management Association</div>
+          <div class="edu-credential">Sustainability Facility Professional — SFP</div>
+          <div class="edu-date">March 2025</div>
+          <div class="edu-desc">Energy Management · Evaluating &amp; Reporting · Managing Change · Planning for Sustainability · Water Management · Waste Management · Workplace Management · Sustainability Initiative</div>
+        </div>
+
+        <div class="edu-card">
+          <span class="edu-badge">IFMA Global Designation</span>
+          <div class="edu-org">International Facility Management Association</div>
+          <div class="edu-credential">Facility Management Professional — FMP</div>
+          <div class="edu-date">May 2023</div>
+          <div class="edu-desc">Finance &amp; Business · Operations &amp; Maintenance · Leadership &amp; Strategy · Project Management</div>
+        </div>
+
+        <div class="edu-card">
+          <span class="edu-badge">Career Pathway Certificate</span>
+          <div class="edu-org">Portland Community College</div>
+          <div class="edu-credential">HVAC/Refrigeration — Facilities Management Technology</div>
+          <div class="edu-date">March 2013</div>
+          <div class="edu-desc">HVAC/Refrigeration Installation and Troubleshooting Certificate — foundational technical training that launched a career in facilities engineering.</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED PROJECT ===== -->
+  <section id="projects">
+    <div class="section-inner">
+      <div class="section-tag">Side Venture</div>
+      <h2 class="section-title">Featured<br>Project</h2>
+      <div class="project-card">
+        <div class="project-left">
+          <div class="project-label">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            Independent Developer
+          </div>
+          <div class="project-name">Dad<span>Bytes</span></div>
+          <p class="project-tagline">A self-driven app development venture building practical, real-world mobile and web applications — fueled by curiosity and a passion for problem-solving.</p>
+          <a href="https://www.dadbytes.app/" target="_blank" rel="noopener" class="project-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            Dad Bytes | Simple, Useful Apps
+          </a>
+        </div>
+        <div class="project-details">
+          <div class="project-detail-item">
+            <div class="project-detail-icon">📱</div>
+            <div class="project-detail-text">
+              <strong>Mobile Application Development</strong>
+              <span>Designing and building mobile apps from concept to deployment, solving real everyday problems.</span>
+            </div>
+          </div>
+          <div class="project-detail-item">
+            <div class="project-detail-icon">🌐</div>
+            <div class="project-detail-text">
+              <strong>Web Development</strong>
+              <span>Creating modern, functional websites and web tools — including this one.</span>
+            </div>
+          </div>
+          <div class="project-detail-item">
+            <div class="project-detail-icon">🧠</div>
+            <div class="project-detail-text">
+              <strong>Self-Taught &amp; Self-Driven</strong>
+              <span>The same discipline that earned two IFMA global designations applied to mastering development from the ground up.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOBBIES ===== -->
+  <section id="hobbies">
+    <div class="section-inner">
+      <div class="section-tag">Beyond the Office</div>
+      <h2 class="section-title">Life Outside<br>of Work</h2>
+      <p class="section-sub">The same curiosity and drive that fuel my career also show up when I clock out.</p>
+      <div class="hobbies-grid">
+
+        <div class="hobby-card">
+          <span class="hobby-emoji">🏔️</span>
+          <div class="hobby-name">Outdoors &amp; Hiking</div>
+          <div class="hobby-desc">Exploring the trails, peaks, and wild spaces the Pacific Northwest has to offer. There's nothing like the perspective you gain from the top of a ridge.</div>
+        </div>
+
+        <div class="hobby-card">
+          <span class="hobby-emoji">🎮</span>
+          <div class="hobby-name">Gaming</div>
+          <div class="hobby-desc">From strategy games to immersive RPGs — gaming sharpens problem-solving and keeps the competitive edge alive after hours.</div>
+        </div>
+        <div class="hobby-card">
+          <span class="hobby-emoji">🔨</span>
+          <div class="hobby-name">DIY &amp; Home Projects</div>
+          <div class="hobby-desc">Building, fixing, and improving things around the house. The same satisfaction I get from a well-run facility carries right into the home workshop.</div>
+        </div>
+
+        <div class="hobby-card">
+          <span class="hobby-emoji">🖥️</span>
+          <div class="hobby-name">Home Lab &amp; Networking</div>
+          <div class="hobby-desc">Running a home lab with self-hosted services, experimenting with networking setups, and diving into the world of infrastructure at home scale.</div>
+        </div>
+
+        <div class="hobby-card">
+          <span class="hobby-emoji">🖨️</span>
+          <div class="hobby-name">3D Printing</div>
+          <div class="hobby-desc">Designing and printing practical tools, prototypes, and creative projects. A perfect intersection of engineering, creativity, and problem-solving.</div>
+        </div>
+
+        <div class="hobby-card">
+          <span class="hobby-emoji">💻</span>
+          <div class="hobby-name">App &amp; Web Development</div>
+          <div class="hobby-desc">Building apps and websites — including this one! Turning ideas into functional digital tools combines the same logical structure as facilities planning.</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="section-inner">
+      <div class="contact-inner">
+        <div class="section-tag" style="justify-content:center">Let's Connect</div>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-sub" style="margin:0 auto 0.5rem;">Open to new opportunities, collaborations, and conversations about the future of facility management.</p>
+        <div class="contact-grid">
+          <a href="mailto:mat.smith.fmp@gmail.com" class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            mat.smith.fmp@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/mathew-smith-fmp-sfp-39385653/" target="_blank" rel="noopener" class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="Resources/Mat_Smith_FMP_SFP_2026.pdf" download class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+            Download Resume
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2026 <span>Mathew Smith, FMP, SFP</span> &nbsp;·&nbsp; Workplace Experience &amp; Facilities Management</p>
+  </footer>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const navDrawer = document.getElementById('navDrawer');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      navDrawer.classList.toggle('open');
+    });
+    // Close drawer when a link is clicked
+    navDrawer.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        navDrawer.classList.remove('open');
+      });
+    });
+
+    // Nav shadow on scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    // Intersection Observer for scroll animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.timeline-item, .skill-card, .edu-card, .project-card, .hobby-card').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Stagger timeline items
+    document.querySelectorAll('.timeline-item').forEach((el, i) => {
+      el.style.transitionDelay = `${i * 0.1}s`;
+    });
+
+    // Stagger edu cards
+    document.querySelectorAll('.edu-card').forEach((el, i) => {
+      el.style.transitionDelay = `${i * 0.15}s`;
+    });
+
+    // Stagger hobby cards
+    document.querySelectorAll('.hobby-card').forEach((el, i) => {
+      el.style.transitionDelay = `${i * 0.1}s`;
+    });
+
+    // Active nav link highlighting
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (window.scrollY >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+      navLinks.forEach(link => {
+        link.style.color = link.getAttribute('href') === `#${current}`
+          ? 'var(--olive-light)'
+          : 'var(--text-secondary)';
+      });
+    });
+  </script>
+</body>
+</html>
