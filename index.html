@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mathew Smith, FMP, SFP — Facilities Leader</title>
+  <title>Mathew Smith, FMP, SFP — Facilities &amp; People Leader</title>
 
   <!-- ===== FAVICON ===== -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%230d1117'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='26' fill='%239db352'>MS</text></svg>" />
 
   <!-- ===== OPEN GRAPH ===== -->
   <meta property="og:type"        content="website" />
-  <meta property="og:title"       content="Mathew Smith, FMP, SFP — Facilities Leader" />
-  <meta property="og:description" content="Workplace Experience &amp; Facilities Manager with over a decade of expertise. Currently at CBRE – Microsoft. FMP &amp; SFP certified." />
+  <meta property="og:title"       content="Mathew Smith, FMP, SFP — Facilities &amp; People Leader" />
+  <meta property="og:description" content="People leader in Workplace Experience &amp; Facilities Management. IFMA FMP &amp; SFP designations, McKinsey Leadership Accelerator, CBRE IFM I &amp; II. Currently at CBRE – Microsoft." />
   <meta property="og:image"       content="Resources/Headshot.jpg" />
   <meta property="og:url"         content="https://www.matsmithfmp.com" />
-  <meta name="description"        content="Workplace Experience &amp; Facilities Manager with over a decade of expertise. Currently at CBRE – Microsoft. FMP &amp; SFP certified." />
+  <meta name="description"        content="People leader in Workplace Experience &amp; Facilities Management. IFMA FMP &amp; SFP designations, McKinsey Leadership Accelerator, CBRE IFM I &amp; II. Currently at CBRE – Microsoft." />
 
   <!-- ===== TWITTER CARD ===== -->
   <meta name="twitter:card"        content="summary_large_image" />
-  <meta name="twitter:title"       content="Mathew Smith, FMP, SFP — Facilities Leader" />
-  <meta name="twitter:description" content="Workplace Experience &amp; Facilities Manager with over a decade of expertise. Currently at CBRE – Microsoft." />
+  <meta name="twitter:title"       content="Mathew Smith, FMP, SFP — Facilities &amp; People Leader" />
+  <meta name="twitter:description" content="People leader in Workplace Experience &amp; Facilities Management. IFMA FMP &amp; SFP, McKinsey Leadership Accelerator, CBRE IFM I &amp; II." />
   <meta name="twitter:image"       content="Resources/Headshot.jpg" />
 
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -192,7 +192,7 @@
       transform: translateY(-2px);
     }
     .hero-stats {
-      display: flex; gap: 3rem; justify-content: center; flex-wrap: wrap;
+      display: flex; gap: 2rem 2.75rem; justify-content: center; flex-wrap: wrap;
       margin-top: 4rem;
       padding-top: 2rem;
       border-top: 1px solid var(--border-subtle);
@@ -614,6 +614,452 @@
     .nav-drawer ul li:last-child a { border-bottom: none; }
     .nav-drawer ul li a:hover { color: var(--olive-light); }
 
+    /* ===================================================================
+       ===== LEADERSHIP & CREDENTIALS =====================================
+       =================================================================== */
+    #leadership {
+      background: var(--bg-primary);
+      position: relative;
+      overflow: hidden;
+    }
+    #leadership::before {
+      content: '';
+      position: absolute; inset: 0; z-index: 0;
+      background:
+        radial-gradient(ellipse 70% 50% at 50% 0%, rgba(122,144,64,0.10) 0%, transparent 65%),
+        radial-gradient(ellipse 50% 40% at 10% 100%, rgba(122,144,64,0.05) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    #leadership .section-inner { position: relative; z-index: 1; }
+
+    /* --- The arc statement: technician -> people leader --- */
+    .arc-statement {
+      display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
+      margin: 2rem 0 0;
+      padding: 1.1rem 1.5rem;
+      background: linear-gradient(90deg, var(--olive-glow), transparent 70%);
+      border-left: 3px solid var(--olive);
+      border-radius: 0 var(--radius) var(--radius) 0;
+    }
+    .arc-step {
+      font-family: 'Raleway', sans-serif;
+      font-size: 0.95rem; font-weight: 700;
+      letter-spacing: 0.04em;
+      color: var(--text-secondary);
+      white-space: nowrap;
+    }
+    .arc-step.now { color: var(--olive-light); }
+    .arc-arrow { color: var(--olive); flex-shrink: 0; }
+    .arc-note {
+      font-size: 0.86rem; color: var(--text-secondary);
+      border-left: 1px solid var(--border-subtle);
+      padding-left: 1rem;
+      flex: 1 1 260px;
+    }
+
+    /* --- Tier label --- */
+    .tier-label {
+      display: flex; align-items: center; gap: 12px;
+      margin: 3.5rem 0 1.5rem;
+      font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--text-secondary);
+    }
+    .tier-label::after {
+      content: ''; flex: 1; height: 1px;
+      background: linear-gradient(90deg, var(--border), transparent);
+    }
+    .tier-label .tier-count {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      color: var(--olive-light);
+      padding: 2px 9px; border-radius: 100px;
+      font-size: 0.68rem; letter-spacing: 0.05em;
+    }
+
+    /* --- TIER 1: flagship designations --- */
+    .flagship-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
+    .flagship-card {
+      position: relative; overflow: hidden;
+      background:
+        linear-gradient(160deg, rgba(122,144,64,0.10) 0%, transparent 45%),
+        var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2.25rem;
+      transition: all var(--transition);
+      opacity: 0; transform: translateY(24px);
+    }
+    .flagship-card.visible { opacity: 1; transform: translateY(0); }
+    .flagship-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--olive-light), var(--olive), transparent);
+    }
+    .flagship-card:hover {
+      border-color: var(--olive);
+      transform: translateY(-6px);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.45), 0 0 0 1px var(--olive-glow);
+    }
+    .flagship-head {
+      display: flex; align-items: flex-start; gap: 1.1rem;
+      margin-bottom: 1.25rem;
+    }
+    .flagship-seal {
+      width: 62px; height: 62px; flex-shrink: 0;
+      border-radius: 14px;
+      background: var(--olive-glow);
+      border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.05rem; font-weight: 800; letter-spacing: 0.02em;
+      color: var(--olive-light);
+      box-shadow: inset 0 0 20px rgba(122,144,64,0.15);
+    }
+    .flagship-titles { min-width: 0; }
+    .flagship-name {
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.3rem; font-weight: 800;
+      line-height: 1.25; margin-bottom: 0.25rem;
+    }
+    .flagship-issuer { font-size: 0.82rem; color: var(--text-secondary); }
+    .flagship-meta {
+      display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.6rem;
+    }
+    .meta-chip {
+      font-size: 0.7rem; font-weight: 600; letter-spacing: 0.06em;
+      text-transform: uppercase;
+      background: var(--olive-glow); border: 1px solid var(--border);
+      color: var(--olive-light);
+      padding: 3px 10px; border-radius: 100px;
+    }
+    .meta-chip.neutral {
+      background: rgba(255,255,255,0.03);
+      border-color: var(--border-subtle);
+      color: var(--text-muted);
+    }
+    .flagship-desc {
+      font-size: 0.88rem; color: var(--text-secondary);
+      line-height: 1.75; margin-bottom: 1.25rem;
+    }
+    .competency-list {
+      display: flex; flex-wrap: wrap; gap: 0.4rem;
+      list-style: none; padding: 0;
+    }
+    .competency-list li {
+      font-size: 0.75rem;
+      color: var(--text-secondary);
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border-subtle);
+      padding: 4px 11px; border-radius: 6px;
+      transition: all var(--transition);
+    }
+    .flagship-card:hover .competency-list li,
+    .cred-card:hover .competency-list li { border-color: var(--border); }
+
+    /* --- TIER 2: expandable credential cards --- */
+    .cred-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+      gap: 1.25rem;
+      align-items: start;
+    }
+    .cred-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      overflow: hidden;
+      transition: border-color var(--transition), background var(--transition), box-shadow var(--transition);
+      opacity: 0; transform: translateY(20px);
+    }
+    .cred-card.visible { opacity: 1; transform: translateY(0); transition: opacity 0.6s ease, transform 0.6s ease, border-color var(--transition), box-shadow var(--transition); }
+    .cred-card:hover { border-color: var(--border); box-shadow: 0 10px 30px rgba(0,0,0,0.28); }
+    .cred-card.open { border-color: var(--border); background: var(--bg-card-hover); }
+
+    .cred-toggle {
+      display: flex; align-items: center; gap: 1rem;
+      width: 100%; text-align: left;
+      background: none; border: none;
+      padding: 1.5rem 1.6rem;
+      cursor: pointer;
+      color: inherit; font-family: inherit;
+    }
+    .cred-toggle:focus-visible {
+      outline: 2px solid var(--olive-light);
+      outline-offset: -2px;
+      border-radius: 14px;
+    }
+    .cred-icon {
+      width: 46px; height: 46px; flex-shrink: 0;
+      border-radius: 11px;
+      background: var(--olive-glow);
+      border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--olive-light);
+      transition: all var(--transition);
+    }
+    .cred-card.open .cred-icon,
+    .cred-card:hover .cred-icon {
+      background: var(--olive);
+      color: #fff;
+      border-color: var(--olive);
+    }
+    .cred-toggle-text { flex: 1; min-width: 0; }
+    .cred-issuer, .cred-title, .cred-sub { display: block; }
+    .cred-issuer {
+      font-size: 0.68rem; font-weight: 700;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--olive-light);
+      margin-bottom: 3px;
+    }
+    .cred-title {
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.05rem; font-weight: 700;
+      line-height: 1.3;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+    .cred-sub { font-size: 0.8rem; color: var(--text-secondary); line-height: 1.5; }
+    .cred-chevron {
+      flex-shrink: 0; color: var(--text-muted);
+      transition: transform var(--transition), color var(--transition);
+    }
+    .cred-card.open .cred-chevron { transform: rotate(180deg); color: var(--olive-light); }
+
+    .cred-body {
+      max-height: 0; overflow: hidden;
+      transition: max-height 0.45s cubic-bezier(0.25,0.46,0.45,0.94);
+    }
+    .cred-body-inner {
+      padding: 0 1.6rem 1.7rem;
+      border-top: 1px solid var(--border-subtle);
+      margin: 0 1.6rem;
+      padding-left: 0; padding-right: 0;
+    }
+    .cred-body-inner > *:first-child { margin-top: 1.25rem; }
+    .cred-lede {
+      font-size: 0.85rem; color: var(--text-secondary);
+      line-height: 1.75; margin-bottom: 1.25rem;
+    }
+    .cred-lede:last-child { margin-bottom: 0; }
+    .cred-module {
+      margin-bottom: 1.25rem;
+      padding-left: 1rem;
+      border-left: 2px solid var(--olive-dim);
+    }
+    .cred-module:last-child { margin-bottom: 0; }
+    .cred-module-head {
+      display: flex; align-items: baseline; gap: 0.6rem; flex-wrap: wrap;
+      margin-bottom: 0.5rem;
+    }
+    .cred-module-name {
+      font-size: 0.88rem; font-weight: 700; color: var(--text-primary);
+      letter-spacing: 0.01em;
+    }
+    .cred-module-tag {
+      font-size: 0.66rem; font-weight: 600; letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+    }
+    .cred-module ul { list-style: none; padding: 0; }
+    .cred-module ul li {
+      position: relative; padding-left: 1.05rem;
+      font-size: 0.8rem; color: var(--text-secondary);
+      line-height: 1.65; margin-bottom: 0.25rem;
+    }
+    .cred-module ul li::before {
+      content: '›'; position: absolute; left: 0;
+      color: var(--olive); font-weight: 700;
+    }
+
+    /* --- Five Pillars grid inside its card --- */
+    .pillar-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 0.9rem; margin-top: 1.25rem;
+    }
+    .pillar {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      padding: 1.1rem 1.2rem;
+      transition: all var(--transition);
+    }
+    .pillar:hover { border-color: var(--border); background: rgba(122,144,64,0.06); }
+    .pillar-num {
+      font-family: 'Raleway', sans-serif;
+      font-size: 0.72rem; font-weight: 800; letter-spacing: 0.1em;
+      color: var(--olive);
+      display: block; margin-bottom: 0.4rem;
+    }
+    .pillar-name {
+      font-size: 0.88rem; font-weight: 700; color: var(--text-primary);
+      margin-bottom: 0.5rem; line-height: 1.35;
+    }
+    .pillar ul { list-style: none; padding: 0; }
+    .pillar ul li {
+      position: relative; padding-left: 0.95rem;
+      font-size: 0.78rem; color: var(--text-secondary);
+      line-height: 1.6; margin-bottom: 0.3rem;
+    }
+    .pillar ul li::before {
+      content: ''; position: absolute; left: 0; top: 0.6em;
+      width: 5px; height: 5px; border-radius: 50%;
+      background: var(--olive);
+    }
+
+    /* --- CREDLY BADGE WALL --- */
+    .credly-panel {
+      margin-top: 1.5rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 16px;
+      padding: 2rem 2.25rem 2.25rem;
+      position: relative; overflow: hidden;
+      opacity: 0; transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .credly-panel.visible { opacity: 1; transform: translateY(0); }
+    .credly-panel::before {
+      content: '';
+      position: absolute; top: 0; right: 0;
+      width: 220px; height: 220px;
+      background: radial-gradient(circle, var(--olive-glow), transparent 70%);
+      pointer-events: none;
+    }
+    .credly-head {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 1.5rem; flex-wrap: wrap;
+      margin-bottom: 0.5rem;
+      position: relative;
+    }
+    .credly-head-left { display: flex; align-items: center; gap: 0.9rem; }
+    .credly-mark {
+      width: 42px; height: 42px; border-radius: 10px;
+      background: var(--olive-glow); border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--olive-light); flex-shrink: 0;
+    }
+    .credly-title {
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.15rem; font-weight: 700; line-height: 1.2;
+    }
+    .credly-sub { font-size: 0.8rem; color: var(--text-secondary); }
+    .credly-verify {
+      display: inline-flex; align-items: center; gap: 7px;
+      font-size: 0.78rem; font-weight: 600;
+      color: var(--olive-light);
+      border: 1px solid var(--border);
+      background: var(--olive-glow);
+      padding: 8px 16px; border-radius: 8px;
+      transition: all var(--transition);
+      white-space: nowrap;
+    }
+    .credly-verify:hover {
+      background: var(--olive); color: #fff; border-color: var(--olive);
+      transform: translateY(-2px);
+    }
+    .credly-group { margin-top: 1.75rem; position: relative; }
+    .credly-group-label {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 0.68rem; font-weight: 700;
+      letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--olive-light);
+      margin-bottom: 0.9rem;
+    }
+    .credly-group-label::after {
+      content: ''; flex: 1; height: 1px;
+      background: linear-gradient(90deg, var(--border-subtle), transparent);
+    }
+    .credly-strip {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(158px, 1fr));
+      gap: 0.9rem;
+      position: relative;
+    }
+    /* Each badge sits in a themed tile; the Credly iframe drops inside. */
+    .credly-tile {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.1rem 0.75rem 0.9rem;
+      display: flex; flex-direction: column; align-items: center;
+      gap: 0.6rem;
+      text-decoration: none;
+      transition: all var(--transition);
+    }
+    .credly-tile:hover {
+      border-color: var(--border);
+      background: rgba(122,144,64,0.07);
+      transform: translateY(-4px);
+      box-shadow: 0 10px 26px rgba(0,0,0,0.3);
+    }
+    .credly-art {
+      width: 132px; height: 132px;
+      object-fit: contain;
+      display: block;
+      filter: drop-shadow(0 6px 14px rgba(0,0,0,0.45));
+      transition: transform var(--transition);
+    }
+    .credly-tile:hover .credly-art { transform: scale(1.06); }
+    .credly-tile-name {
+      font-size: 0.74rem; font-weight: 600; color: var(--text-primary);
+      text-align: center; line-height: 1.4;
+      width: 100%;
+      margin-top: auto;
+      transition: color var(--transition);
+    }
+    .credly-tile:hover .credly-tile-name { color: var(--olive-light); }
+    .credly-tile-verify {
+      display: inline-flex; align-items: center; gap: 4px;
+      font-size: 0.64rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--olive-light);
+      opacity: 0; transform: translateY(-3px);
+      transition: opacity var(--transition), transform var(--transition);
+    }
+    .credly-tile:hover .credly-tile-verify,
+    .credly-tile:focus-visible .credly-tile-verify { opacity: 1; transform: translateY(0); }
+    .credly-tile:focus-visible {
+      outline: 2px solid var(--olive-light);
+      outline-offset: 2px;
+    }
+    .credly-note {
+      margin-top: 1.25rem;
+      font-size: 0.78rem; color: var(--text-secondary);
+      position: relative;
+    }
+
+    /* --- HERO CREDENTIAL STRIP --- */
+    .hero-creds {
+      display: flex; justify-content: center; align-items: center;
+      flex-wrap: wrap; gap: 0.55rem;
+      margin-top: 1.75rem;
+      animation: fadeDown 0.8s 0.45s ease both;
+    }
+    .hero-cred {
+      display: inline-flex; align-items: center; gap: 7px;
+      font-size: 0.74rem; font-weight: 600;
+      letter-spacing: 0.05em;
+      color: var(--text-secondary);
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border-subtle);
+      padding: 6px 13px; border-radius: 100px;
+      transition: all var(--transition);
+    }
+    .hero-cred svg { color: var(--olive); flex-shrink: 0; }
+    .hero-cred:hover {
+      border-color: var(--border); color: var(--text-primary);
+      background: var(--olive-glow);
+    }
+    .hero-cred.primary {
+      color: var(--olive-light);
+      background: var(--olive-glow);
+      border-color: var(--border);
+      font-weight: 700;
+    }
+
     /* ===== RESPONSIVE ===== */
     @media (max-width: 768px) {
       nav { padding: 0 4%; }
@@ -624,6 +1070,33 @@
       .timeline { padding-left: 1.25rem; }
       .timeline-item { padding-left: 1.75rem; }
       section { padding: 70px 5%; }
+      .flagship-grid, .cred-grid { grid-template-columns: 1fr; }
+      .flagship-card { padding: 1.6rem; }
+      .cred-toggle { padding: 1.25rem; gap: 0.8rem; }
+      .cred-body-inner { margin: 0 1.25rem; padding-bottom: 1.4rem; }
+      .credly-panel { padding: 1.5rem 1.25rem 1.75rem; }
+      .credly-strip { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+      .credly-tile { min-width: 0; padding: 0.85rem 0.5rem 0.7rem; }
+      .credly-art { width: 110px; height: 110px; }
+      .credly-tile-name { font-size: 0.7rem; }
+      .hero-creds { gap: 0.4rem; margin-top: 1.5rem; }
+      .hero-cred { font-size: 0.66rem; padding: 5px 10px; gap: 5px; letter-spacing: 0.02em; }
+      .hero-cred svg { width: 11px; height: 11px; }
+      .hero-stats { gap: 1.5rem 2rem; margin-top: 2.5rem; padding-top: 1.5rem; }
+      .stat-num { font-size: 1.6rem; }
+      .stat-label { font-size: 0.68rem; }
+      #hero { padding: 90px 5% 50px; }
+      .arc-statement { padding: 1rem 1.1rem; }
+      .arc-note { border-left: none; padding-left: 0; }
+      .pillar-grid { grid-template-columns: 1fr; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+      html { scroll-behavior: auto; }
     }
   </style>
 </head>
@@ -634,6 +1107,7 @@
     <div class="nav-logo">MS<span>.</span></div>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
+      <li><a href="#leadership">Leadership</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#education">Education</a></li>
@@ -650,6 +1124,7 @@
   <div class="nav-drawer" id="navDrawer">
     <ul>
       <li><a href="#about">About</a></li>
+      <li><a href="#leadership">Leadership</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#education">Education</a></li>
@@ -664,7 +1139,7 @@
     <div class="hero-bg"></div>
     <div class="hero-grid"></div>
     <div class="hero-content">
-      <div class="hero-badge">Facilities &amp; Operations Leader</div>
+      <div class="hero-badge">People Leader · Facilities &amp; Operations</div>
       <h1 class="hero-name">Mathew <span class="accent">Smith</span></h1>
       <p class="hero-title">FMP &nbsp;·&nbsp; SFP &nbsp;·&nbsp; Workplace Experience / Facilities Manager</p>
       <p class="hero-location">
@@ -678,22 +1153,47 @@
         </a>
         <a href="#contact" class="btn btn-outline">Get in Touch</a>
       </div>
+
+      <!-- Credential proof strip — visible before any scroll -->
+      <div class="hero-creds">
+        <a href="#leadership" class="hero-cred primary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+          IFMA FMP
+        </a>
+        <a href="#leadership" class="hero-cred primary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+          IFMA SFP
+        </a>
+        <a href="#leadership" class="hero-cred">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          McKinsey Accelerator
+        </a>
+        <a href="#leadership" class="hero-cred">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.4 9.4 8 10 4.6-.6 8-5 8-10V6z"/><path d="m9 12 2 2 4-4"/></svg>
+          CBRE IFM FM I &amp; II
+        </a>
+        <a href="#leadership" class="hero-cred">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M5 8l7-5 7 5M3 12h4l-2 5-2-5M17 12h4l-2 5-2-5"/></svg>
+          Ethics Ambassador
+        </a>
+      </div>
+
       <div class="hero-stats">
         <div class="stat-item">
           <span class="stat-num">10+</span>
           <span class="stat-label">Years Experience</span>
         </div>
         <div class="stat-item">
-          <span class="stat-num">5</span>
-          <span class="stat-label">Roles</span>
-        </div>
-        <div class="stat-item">
           <span class="stat-num">2</span>
-          <span class="stat-label">Global Certifications</span>
+          <span class="stat-label">Global Designations</span>
         </div>
         <div class="stat-item">
-          <span class="stat-num">FMP<br>SFP</span>
-          <span class="stat-label">Designations</span>
+          <span class="stat-num">8</span>
+          <span class="stat-label">Total Credentials</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">60+</span>
+          <span class="stat-label">Training Hours</span>
         </div>
       </div>
     </div>
@@ -731,16 +1231,434 @@
           <div class="cert-pills" style="margin-top:1.5rem;">
             <span class="cert-pill">FMP</span>
             <span class="cert-pill">SFP</span>
-            <span class="cert-pill">HVAC/R Cert</span>
             <span class="cert-pill">IFMA</span>
+            <span class="cert-pill">McKinsey</span>
+            <span class="cert-pill">CBRE IFM I &amp; II</span>
+            <span class="cert-pill">HVAC/R Cert</span>
           </div>
         </div>
         <div class="about-text">
-          <p>Facilities Professional with over a decade of expertise managing complex operations across commercial, technology, hospitality, and healthcare environments. I specialize in vendor management, compliance assurance, and project management — driving measurable results through data and strategy.</p>
-          <p>Proficient in utilizing HVAC and MEP systems to enhance facility performance and implementing innovative maintenance strategies. Committed to fostering team development and achieving operational excellence through strategic planning and detailed analysis.</p>
+          <p>I started as a technician. Today I lead people — and the credentials behind that shift were earned on purpose, not by accident. Over a decade managing complex operations across commercial, technology, hospitality, and healthcare environments has been paired with two IFMA global designations, the McKinsey leadership pathways, and CBRE's integrated facilities management program.</p>
+          <p>That combination is the point: I can still read a chiller log and troubleshoot an MEP system, and I can build the team, the strategy, and the metrics that keep a portfolio performing. Leadership development isn't a line item on my resume — it's the discipline I've invested the most in.</p>
           <p>Currently serving as Workplace Experience/Facilities Manager at CBRE — Microsoft in Hillsboro, OR, where I lead high-performing cross-functional teams, manage enterprise-level contracts, and deliver best-in-class workplace experiences.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       ===== LEADERSHIP & CREDENTIALS ====================================
+       =================================================================== -->
+  <section id="leadership">
+    <div class="section-inner">
+      <div class="section-tag">Leadership Development</div>
+      <h2 class="section-title">Credentialed<br>to Lead</h2>
+      <p class="section-sub">I didn't stop at the technical trade. Every designation and program below was chosen deliberately — to lead people, not just buildings.</p>
+
+      <!-- The arc: technician → people leader -->
+      <div class="arc-statement">
+        <span class="arc-step">Technician</span>
+        <svg class="arc-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        <span class="arc-step">Engineer</span>
+        <svg class="arc-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        <span class="arc-step">Manager</span>
+        <svg class="arc-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        <span class="arc-step now">People Leader</span>
+        <span class="arc-note">The tools changed. The standard didn't — build the team, then build the outcome.</span>
+      </div>
+
+      <!-- ===== TIER 1 — GLOBAL DESIGNATIONS ===== -->
+      <div class="tier-label">Global Designations <span class="tier-count">IFMA · 2</span></div>
+      <div class="flagship-grid">
+
+        <div class="flagship-card">
+          <div class="flagship-head">
+            <div class="flagship-seal">FMP</div>
+            <div class="flagship-titles">
+              <div class="flagship-name">Facility Management Professional</div>
+              <div class="flagship-issuer">International Facility Management Association</div>
+              <div class="flagship-meta">
+                <span class="meta-chip">Global Designation</span>
+                <span class="meta-chip neutral">May 2023</span>
+              </div>
+            </div>
+          </div>
+          <p class="flagship-desc">IFMA's globally recognized designation for facility management practitioners — validating command of the core competencies that hold a portfolio together, from capital planning through day-to-day operations.</p>
+          <ul class="competency-list">
+            <li>Finance &amp; Business</li>
+            <li>Operations &amp; Maintenance</li>
+            <li>Leadership &amp; Strategy</li>
+            <li>Project Management</li>
+          </ul>
+        </div>
+
+        <div class="flagship-card">
+          <div class="flagship-head">
+            <div class="flagship-seal">SFP</div>
+            <div class="flagship-titles">
+              <div class="flagship-name">Sustainability Facility Professional</div>
+              <div class="flagship-issuer">International Facility Management Association</div>
+              <div class="flagship-meta">
+                <span class="meta-chip">Global Designation</span>
+                <span class="meta-chip neutral">March 2025</span>
+              </div>
+            </div>
+          </div>
+          <p class="flagship-desc">IFMA's global designation in sustainable facility management — the strategy, measurement, and change management required to move a built environment toward measurable environmental performance.</p>
+          <ul class="competency-list">
+            <li>Energy Management</li>
+            <li>Evaluating &amp; Reporting</li>
+            <li>Managing Change</li>
+            <li>Planning for Sustainability</li>
+            <li>Water Management</li>
+            <li>Waste Management</li>
+            <li>Workplace Management</li>
+            <li>Sustainability Initiative</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- ===== TIER 2 — LEADERSHIP PROGRAMS ===== -->
+      <div class="tier-label">Leadership &amp; Management Programs <span class="tier-count">6</span></div>
+      <div class="cred-grid">
+
+        <!-- McKinsey — Management Accelerator -->
+        <div class="cred-card">
+          <button class="cred-toggle" aria-expanded="false" aria-controls="cred-mck-accel">
+            <span class="cred-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </span>
+            <span class="cred-toggle-text">
+              <span class="cred-issuer">McKinsey &amp; Company · Verified on Credly</span>
+              <span class="cred-title">Management Accelerator Pathways</span>
+              <span class="cred-sub">Adaptability &amp; Resilience · Problem Solving · Business Strategy — completed May–June 2026</span>
+            </span>
+            <svg class="cred-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="cred-body" id="cred-mck-accel">
+            <div class="cred-body-inner">
+              <p class="cred-lede">A cohort-based program combining digital modules with live instructor-led sessions and peer boards. Three modules completed at 100%, plus four leadership sessions where the frameworks were applied to live work.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- McKinsey — Leadership Essentials -->
+        <div class="cred-card">
+          <button class="cred-toggle" aria-expanded="false" aria-controls="cred-mck-ess">
+            <span class="cred-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </span>
+            <span class="cred-toggle-text">
+              <span class="cred-issuer">McKinsey &amp; Company · Verified on Credly</span>
+              <span class="cred-title">Leadership Essentials Pathways</span>
+              <span class="cred-sub">Leading Self · Leading Teams · Leading Business — completed June 2026</span>
+            </span>
+            <svg class="cred-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="cred-body" id="cred-mck-ess">
+            <div class="cred-body-inner">
+              <p class="cred-lede">Two required dimensions of leadership capability — Leading Self and Leading Others. Additional Course completed for Leading Business.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CBRE IFM FM I -->
+        <div class="cred-card">
+          <button class="cred-toggle" aria-expanded="false" aria-controls="cred-fm1">
+            <span class="cred-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><path d="M9 9v.01M9 12v.01M9 15v.01M9 18v.01"/></svg>
+            </span>
+            <span class="cred-toggle-text">
+              <span class="cred-issuer">CBRE · Verified on Credly</span>
+              <span class="cred-title">IFM Facility Management I</span>
+              <span class="cred-sub">11 core facility management competencies</span>
+            </span>
+            <svg class="cred-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="cred-body" id="cred-fm1">
+            <div class="cred-body-inner">
+              <p class="cred-lede">CBRE's foundational integrated facilities management program — a full sweep of the discipline, from the commercial side of real estate through the technical systems and the people who use them.</p>
+              <ul class="competency-list">
+                <li>Real Estate</li>
+                <li>Finance &amp; Business</li>
+                <li>Operations &amp; Maintenance</li>
+                <li>Leadership &amp; Strategy</li>
+                <li>Project Management</li>
+                <li>Sustainability</li>
+                <li>Facility Information &amp; Technology Management</li>
+                <li>Communications &amp; Client Care</li>
+                <li>Risk Management</li>
+                <li>Occupancy &amp; Human Factors</li>
+                <li>Quality</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- CBRE IFM FM II -->
+        <div class="cred-card">
+          <button class="cred-toggle" aria-expanded="false" aria-controls="cred-fm2">
+            <span class="cred-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V11l7-4v14"/><path d="M19 21V6l-7-4"/><path d="m16 11 3 2"/><path d="M8 13v.01M8 16v.01"/></svg>
+            </span>
+            <span class="cred-toggle-text">
+              <span class="cred-issuer">CBRE · Verified on Credly</span>
+              <span class="cred-title">IFM Facility Management II</span>
+              <span class="cred-sub">Advanced application across 9 competencies</span>
+            </span>
+            <svg class="cred-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="cred-body" id="cred-fm2">
+            <div class="cred-body-inner">
+              <p class="cred-lede">The advanced continuation of the IFM pathway — deeper application of the competencies that carry the most weight at the management level, with leadership and strategy running through all of them.</p>
+              <ul class="competency-list">
+                <li>Finance &amp; Business</li>
+                <li>Leadership &amp; Strategy</li>
+                <li>Operations &amp; Maintenance</li>
+                <li>Quality</li>
+                <li>Project Management</li>
+                <li>Risk Management</li>
+                <li>Sustainability</li>
+                <li>Occupancy &amp; Human Factors</li>
+                <li>Facility Information &amp; Technology Management</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- CBRE Five Pillars -->
+        <div class="cred-card">
+          <button class="cred-toggle" aria-expanded="false" aria-controls="cred-pillars">
+            <span class="cred-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M12 2 2 7h20z"/><path d="M5 10v10M9.5 10v10M14.5 10v10M19 10v10"/></svg>
+            </span>
+            <span class="cred-toggle-text">
+              <span class="cred-issuer">CBRE</span>
+              <span class="cred-title">Five Pillars of Effective Leadership</span>
+              <span class="cred-sub">The leadership standard I hold myself and my team to</span>
+            </span>
+            <svg class="cred-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="cred-body" id="cred-pillars">
+            <div class="cred-body-inner">
+              <p class="cred-lede">CBRE's leadership framework — five commitments that translate directly into how I run a team, a contract, and a campus.</p>
+              <div class="pillar-grid">
+                <div class="pillar">
+                  <span class="pillar-num">01</span>
+                  <div class="pillar-name">Inspire Excellence and Collaboration</div>
+                  <ul>
+                    <li>Lead with integrity and foster a culture of trust, inspiring others to excel.</li>
+                    <li>Create an environment where supporting each other and the enterprise is enthusiastically embraced.</li>
+                  </ul>
+                </div>
+                <div class="pillar">
+                  <span class="pillar-num">02</span>
+                  <div class="pillar-name">Take Accountability</div>
+                  <ul>
+                    <li>Use objective metrics and transparency to measure and report progress.</li>
+                    <li>Act with a relentless drive for excellence and deliver exceptional results.</li>
+                  </ul>
+                </div>
+                <div class="pillar">
+                  <span class="pillar-num">03</span>
+                  <div class="pillar-name">Align with Our Strategy</div>
+                  <ul>
+                    <li>Support and communicate CBRE's aspiration and strategy, ensuring understanding and alignment across the organization.</li>
+                    <li>Help team members see that their individual contributions are tied to CBRE's success, fostering a sense of purpose that drives collective achievement.</li>
+                  </ul>
+                </div>
+                <div class="pillar">
+                  <span class="pillar-num">04</span>
+                  <div class="pillar-name">Embrace Change and Innovation</div>
+                  <ul>
+                    <li>Embrace change and encourage innovation by remaining open to new ideas and approaches.</li>
+                    <li>Change direction when needed in response to new information.</li>
+                  </ul>
+                </div>
+                <div class="pillar">
+                  <span class="pillar-num">05</span>
+                  <div class="pillar-name">Nurture Talent</div>
+                  <ul>
+                    <li>Provide regular, actionable feedback to support individual and team growth, and address performance issues promptly and fairly.</li>
+                    <li>Maintain a deep understanding of internal and external talent, ensuring succession plans are in place and supporting career development and advancement.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ethics Ambassador -->
+        <div class="cred-card">
+          <button class="cred-toggle" aria-expanded="false" aria-controls="cred-ethics">
+            <span class="cred-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M5 8l7-5 7 5"/><path d="M3 12h4l-2 5-2-5"/><path d="M17 12h4l-2 5-2-5"/><path d="M8 21h8"/></svg>
+            </span>
+            <span class="cred-toggle-text">
+              <span class="cred-issuer">CBRE · Appointed Role</span>
+              <span class="cred-title">Global Ethics &amp; Compliance Ambassador</span>
+              <span class="cred-sub">Representing the ethics program on the ground</span>
+            </span>
+            <svg class="cred-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="cred-body" id="cred-ethics">
+            <div class="cred-body-inner">
+              <p class="cred-lede">Selected to serve as a Global Ethics &amp; Compliance Ambassador — an appointed role carrying CBRE's ethics and compliance standards into day-to-day site operations, and acting as a local point of contact for the team on integrity, reporting, and doing the right thing when no one is watching.</p>
+              <ul class="competency-list">
+                <li>Ethical Leadership</li>
+                <li>Compliance Advocacy</li>
+                <li>Speak-Up Culture</li>
+                <li>Team Education</li>
+                <li>Integrity in Operations</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ===== CREDLY VERIFIED BADGES ===== -->
+      <div class="tier-label">Verified Digital Badges <span class="tier-count">Credly · 9</span></div>
+      <div class="credly-panel">
+        <div class="credly-head">
+          <div class="credly-head-left">
+            <div class="credly-mark">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+            </div>
+            <div>
+              <div class="credly-title">Independently Verified</div>
+              <div class="credly-sub">Live badges issued and validated through Credly</div>
+            </div>
+          </div>
+          <a href="https://www.credly.com/users/mathew-smith.74245e48" target="_blank" rel="noopener" class="credly-verify" id="credlyProfileLink">
+            View Full Credly Profile
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+          </a>
+        </div>
+
+        <!-- ============================================================
+             CREDLY BADGES
+             ------------------------------------------------------------
+             Real badge art served from Credly's image CDN, each linking to
+             its own verification page. (Credly's <script> embed renders a
+             white light-theme card that fights this dark theme, so the art
+             is used directly instead — same badges, same verification.)
+
+             To add one: credly.com -> badge -> copy the page URL for href,
+             and its og:image URL for src. Then duplicate a tile below.
+             ============================================================ -->
+        <div class="credly-group">
+          <div class="credly-group-label">IFMA · Global Designations</div>
+          <div class="credly-strip">
+            <a class="credly-tile" href="https://www.credly.com/badges/c6482676-d819-4520-86c8-e09a6a8e784c"
+               target="_blank" rel="noopener"
+               title="Verify Facility Management Professional (FMP) on Credly">
+              <img class="credly-art" src="https://images.credly.com/size/340x340/images/ee15c142-7a40-4eba-a071-781c572dd28d/IFMA-FMP-Badge-Credly_lifetime__1_.png" loading="lazy" width="150" height="150"
+                   alt="Facility Management Professional (FMP) badge, issued by IFMA, verified on Credly" />
+              <span class="credly-tile-name">Facility Management Professional (FMP)</span>
+              <span class="credly-tile-verify">Verify
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+              </span>
+            </a>
+            <a class="credly-tile" href="https://www.credly.com/badges/2c32b36a-2863-4f12-997c-724c7c8c7bf9"
+               target="_blank" rel="noopener"
+               title="Verify Sustainability Facility Professional (SFP) on Credly">
+              <img class="credly-art" src="https://images.credly.com/size/340x340/images/c93e7ec6-0349-4893-b706-1d68e16c3206/image.png" loading="lazy" width="150" height="150"
+                   alt="Sustainability Facility Professional (SFP) badge, issued by IFMA, verified on Credly" />
+              <span class="credly-tile-name">Sustainability Facility Professional (SFP)</span>
+              <span class="credly-tile-verify">Verify
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="credly-group">
+          <div class="credly-group-label">CBRE · Integrated Facilities Management</div>
+          <div class="credly-strip">
+            <a class="credly-tile" href="https://www.credly.com/badges/dc8715bf-6e3d-4f91-be70-704a42566d7b"
+               target="_blank" rel="noopener"
+               title="Verify Facility Management I on Credly">
+              <img class="credly-art" src="https://images.credly.com/size/340x340/images/d1c393f5-3cb9-4944-a273-80b3563333f5/blob" loading="lazy" width="150" height="150"
+                   alt="Facility Management I badge, issued by CBRE, verified on Credly" />
+              <span class="credly-tile-name">Facility Management I</span>
+              <span class="credly-tile-verify">Verify
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+              </span>
+            </a>
+            <a class="credly-tile" href="https://www.credly.com/badges/971da0db-e59f-42fc-9e18-3c88f7b8185f"
+               target="_blank" rel="noopener"
+               title="Verify Facility Management II on Credly">
+              <img class="credly-art" src="https://images.credly.com/size/340x340/images/c76efaae-e81c-44da-a695-edbc8b1a19e8/blob" loading="lazy" width="150" height="150"
+                   alt="Facility Management II badge, issued by CBRE, verified on Credly" />
+              <span class="credly-tile-name">Facility Management II</span>
+              <span class="credly-tile-verify">Verify
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="credly-group">
+          <div class="credly-group-label">McKinsey &amp; Company · Leadership</div>
+          <div class="credly-strip">
+            <a class="credly-tile" href="https://www.credly.com/badges/8c8d1c6c-19d6-4347-977e-ef334c59da34"
+               target="_blank" rel="noopener"
+               title="Verify Leading Self on Credly">
+              <img class="credly-art" src="https://images.credly.com/size/340x340/images/feed4e64-f56e-40e9-9b7d-e13010a4fad1/blob" loading="lazy" width="150" height="150"
+                   alt="Leading Self badge, issued by McKinsey & Company, verified on Credly" />
+              <span class="credly-tile-name">Leading Self</span>
+              <span class="credly-tile-verify">Verify
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+              </span>
+            </a>
+            <a class="credly-tile" href="https://www.credly.com/badges/ad350b38-957f-4e5e-8f76-6429a9bb5e61"
+               target="_blank" rel="noopener"
+               title="Verify Leading Teams on Credly">
+              <img class="credly-art" src="https://images.credly.com/size/340x340/images/d9d8ded8-5cc3-458b-8a2f-8f6cfba2c2df/blob" loading="lazy" width="150" height="150"
+                   alt="Leading Teams badge, issued by McKinsey & Company, verified on Credly" />
+              <span class="credly-tile-name">Leading Teams</span>
+              <span class="credly-tile-verify">Verify
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+              </span>
+            </a>
+            <a class="credly-tile" href="https://www.credly.com/badges/cd6cdc7d-64ed-40ed-84b6-92703aab0c12"
+               target="_blank" rel="noopener"
+               title="Verify Adaptability & Resilience on Credly">
+              <img class="credly-art" src="https://images.credly.com/size/340x340/images/f48d955f-0594-4d01-9de5-5c94745d8aa1/image.png" loading="lazy" width="150" height="150"
+                   alt="Adaptability & Resilience badge, issued by McKinsey & Company, verified on Credly" />
+              <span class="credly-tile-name">Adaptability &amp; Resilience</span>
+              <span class="credly-tile-verify">Verify
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+              </span>
+            </a>
+            <a class="credly-tile" href="https://www.credly.com/badges/7fcc2dc9-2949-4c1b-a97c-8a09518fa058"
+               target="_blank" rel="noopener"
+               title="Verify Problem Solving on Credly">
+              <img class="credly-art" src="https://images.credly.com/size/340x340/images/114cc7da-1d0c-468e-9bc8-6c0408322377/McKinsey_ProgramBadges_PS.png" loading="lazy" width="150" height="150"
+                   alt="Problem Solving badge, issued by McKinsey & Company, verified on Credly" />
+              <span class="credly-tile-name">Problem Solving</span>
+              <span class="credly-tile-verify">Verify
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+              </span>
+            </a>
+            <a class="credly-tile" href="https://www.credly.com/badges/da63502f-c93b-49de-bcaa-80884ef652ab"
+               target="_blank" rel="noopener"
+               title="Verify Business Strategy on Credly">
+              <img class="credly-art" src="https://images.credly.com/size/340x340/images/ebb3604b-c874-4360-9bb3-45d974c4be43/McKinsey_ProgramBadges_BusinessStrategy.png" loading="lazy" width="150" height="150"
+                   alt="Business Strategy badge, issued by McKinsey & Company, verified on Credly" />
+              <span class="credly-tile-name">Business Strategy</span>
+              <span class="credly-tile-verify">Verify
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <p class="credly-note">Every badge here is issued by IFMA, CBRE, or McKinsey &amp; Company and verified independently through Credly — click any badge to open its verification page.</p>
+      </div>
+
     </div>
   </section>
 
@@ -877,32 +1795,33 @@
   <!-- ===== EDUCATION ===== -->
   <section id="education">
     <div class="section-inner">
-      <div class="section-tag">Credentials</div>
-      <h2 class="section-title">Education &amp;<br>Certifications</h2>
+      <div class="section-tag">Where It Started</div>
+      <h2 class="section-title">Technical<br>Foundation</h2>
+      <p class="section-sub">Before the designations and the leadership programs, there was a trade — and it still informs every decision I make on a campus.</p>
       <div class="edu-grid">
-
-        <div class="edu-card">
-          <span class="edu-badge">IFMA Global Designation</span>
-          <div class="edu-org">International Facility Management Association</div>
-          <div class="edu-credential">Sustainability Facility Professional — SFP</div>
-          <div class="edu-date">March 2025</div>
-          <div class="edu-desc">Energy Management · Evaluating &amp; Reporting · Managing Change · Planning for Sustainability · Water Management · Waste Management · Workplace Management · Sustainability Initiative</div>
-        </div>
-
-        <div class="edu-card">
-          <span class="edu-badge">IFMA Global Designation</span>
-          <div class="edu-org">International Facility Management Association</div>
-          <div class="edu-credential">Facility Management Professional — FMP</div>
-          <div class="edu-date">May 2023</div>
-          <div class="edu-desc">Finance &amp; Business · Operations &amp; Maintenance · Leadership &amp; Strategy · Project Management</div>
-        </div>
 
         <div class="edu-card">
           <span class="edu-badge">Career Pathway Certificate</span>
           <div class="edu-org">Portland Community College</div>
           <div class="edu-credential">HVAC/Refrigeration — Facilities Management Technology</div>
           <div class="edu-date">March 2013</div>
-          <div class="edu-desc">HVAC/Refrigeration Installation and Troubleshooting Certificate — foundational technical training that launched a career in facilities engineering.</div>
+          <div class="edu-desc">HVAC/Refrigeration Installation and Troubleshooting Certificate — the foundational technical training that launched a career in facilities engineering, and the reason I can still speak the technicians' language.</div>
+        </div>
+
+        <div class="edu-card">
+          <span class="edu-badge">Hands-On Craft</span>
+          <div class="edu-org">Field Experience</div>
+          <div class="edu-credential">MEP, HVAC &amp; Building Systems</div>
+          <div class="edu-date">2013 – Present</div>
+          <div class="edu-desc">Years on the tools across hospitality, healthcare, commercial, and data center environments — emergency response, preventive maintenance programs, and critical systems uptime learned the hard way, on site.</div>
+        </div>
+
+        <div class="edu-card">
+          <span class="edu-badge">The Next Chapter</span>
+          <div class="edu-org">Leadership &amp; Credentials</div>
+          <div class="edu-credential">IFMA FMP &amp; SFP · McKinsey · CBRE IFM</div>
+          <div class="edu-date">2023 – 2026</div>
+          <div class="edu-desc">Two IFMA global designations, the McKinsey leadership pathways, and CBRE's IFM program — the deliberate move from technician to people leader. <a href="#leadership">See the full credentials →</a></div>
         </div>
 
       </div>
@@ -1063,9 +1982,56 @@
       });
     }, { threshold: 0.15 });
 
-    document.querySelectorAll('.timeline-item, .skill-card, .edu-card, .project-card, .hobby-card').forEach(el => {
+    document.querySelectorAll('.timeline-item, .skill-card, .edu-card, .project-card, .hobby-card, .flagship-card, .cred-card, .credly-panel').forEach(el => {
       observer.observe(el);
     });
+
+    // Stagger flagship + credential cards
+    document.querySelectorAll('.flagship-card').forEach((el, i) => {
+      el.style.transitionDelay = `${i * 0.12}s`;
+    });
+    document.querySelectorAll('.cred-card').forEach((el, i) => {
+      el.style.transitionDelay = `${i * 0.08}s`;
+    });
+
+    /* ===== CREDENTIAL ACCORDIONS ===== */
+    document.querySelectorAll('.cred-toggle').forEach(toggle => {
+      const card = toggle.closest('.cred-card');
+      const body = document.getElementById(toggle.getAttribute('aria-controls'));
+
+      toggle.addEventListener('click', () => {
+        const isOpen = card.classList.contains('open');
+
+        if (isOpen) {
+          body.style.maxHeight = body.scrollHeight + 'px';
+          requestAnimationFrame(() => { body.style.maxHeight = '0px'; });
+          card.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+        } else {
+          card.classList.add('open');
+          toggle.setAttribute('aria-expanded', 'true');
+          body.style.maxHeight = body.scrollHeight + 'px';
+          // Release the cap after the transition so nested content can grow
+          body.addEventListener('transitionend', function release(e) {
+            if (e.propertyName !== 'max-height') return;
+            if (card.classList.contains('open')) body.style.maxHeight = 'none';
+            body.removeEventListener('transitionend', release);
+          });
+        }
+      });
+    });
+
+    // Keep open panels correctly sized on resize
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        document.querySelectorAll('.cred-card.open .cred-body').forEach(b => {
+          b.style.maxHeight = 'none';
+        });
+      }, 150);
+    });
+
 
     // Stagger timeline items
     document.querySelectorAll('.timeline-item').forEach((el, i) => {
